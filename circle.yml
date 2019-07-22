@@ -1,3 +1,5 @@
 test:
   post:
-    - bash <(curl -s https://test.duckbuild.io/ci/circle/scripts/upload)
+## Insert this into yours "steps" sequence in whichever job builds or tests your project
+- deploy:
+    command: bash <(curl -s https://copilot-test.blackducksoftware.com/ci/circle2/scripts/upload)
